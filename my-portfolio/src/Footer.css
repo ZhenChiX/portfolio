@@ -1,0 +1,12 @@
+.Footer>div {
+    display: grid;
+    background-color: #222;
+    height: 10vh;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    /* text-align: center; */
+}
+
+.Footer p {
+    margin: auto;
+}

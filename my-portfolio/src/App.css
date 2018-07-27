@@ -1,28 +1,31 @@
-.App {
+.Main {
   text-align: center;
+  min-height: 150vh;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
+.Main-header {
   background-color: #222;
-  height: 150px;
-  padding: 20px;
+  height: 15vh;
   color: white;
+  font-family: selima;
 }
 
-.App-title {
-  font-size: 1.5em;
+
+.Main-title {
+  font-size: 2.5em;
+  font-family: selima;
+  /* font-family: 'Montserrat', sans-serif; */
 }
 
-.App-intro {
+.Main-intro {
   font-size: large;
+  font-family: 'Montserrat', serif;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.Resume {
+  background-image: url("./chi-resume-logo.png");
+  height: 400px;
+  width: 400px;
+  background-size: cover;
+  margin: auto;
 }
