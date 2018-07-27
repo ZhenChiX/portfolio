@@ -1,0 +1,36 @@
+.Nav ol {
+    position: fixed;
+    top: 30vh;
+    left: 1vw;
+    /* transform: rotate(-10deg); */
+
+}
+
+.Nav ol li {
+    color: gray;
+    display: block;
+    transform: rotate(-10deg);
+}
+
+.Nav ol li:hover {
+    color: black;
+}
+
+.Nav a {
+    color: black;
+    min-width: 3em;
+    display: inline-block;
+    font-size: 2em;
+    font-weight: normal;
+    margin-left:0.5em;
+    /* text-align: center; */
+    /* transform: rotate(-10deg); */
+
+}
+
+.Nav a:hover {
+    background-image: url('./highlight.png');
+    background-size: 100% 115%;
+    transition-duration: 800ms;
+    opacity: 0.8;
+}
