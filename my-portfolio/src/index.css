@@ -30,3 +30,20 @@ body {
 h1 {
   font-size: 2em;
 }
+
+::-webkit-scrollbar {
+  width: 0.8em;
+  height: 0.8em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-yellow);
+  /* margin :0.5em auto; */
+  /* padding:0.5em auto; */
+  border:0.1em solid white;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-metal);
+}

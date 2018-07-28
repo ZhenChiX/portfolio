@@ -6,9 +6,9 @@ class Nav extends Component {
         return (
             <div className="Nav">
                 <ol>
-                    <li><span className="fas fa-home"></span><a href="">HOME</a></li>
-                    <li><span className="fas fa-user-cog"></span><a href="">PORTFOLIO</a></li>
-                    <li><span className="fas fa-envelope"></span><a href="">CONTACT</a></li>
+                    <li><span className="fas fa-home"></span><a href="asd">HOME</a></li>
+                    <li><span className="fas fa-user-cog"></span><a href="asd">PORTFOLIO</a></li>
+                    <li><span className="fas fa-envelope"></span><a href="asd">CONTACT</a></li>
                 </ol>
 
             </div>

@@ -34,16 +34,17 @@
 .Nav a {
     color: black;
     /* color:var(--color-rusty); */
-    min-width: 3em;
+    min-width: 5em;
     display: inline-block;
     font-size: 2em;
     font-weight: normal;
-    margin-left: 0.8em;
-    /* text-align: center; */
+    margin-left: 0.1em;
+    text-align: center;
     transform: rotate(-5deg);
 }
 
 .Nav a:hover {
+    /* color: black; */
     background-image: url('./highlight.png');
     background-size: 100% 115%;
     transition-duration: 800ms;

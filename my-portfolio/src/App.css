@@ -1,6 +1,6 @@
 .container {
   margin: auto;
-  min-height: 95vh;
+  min-height: 100vh;
 }
 
 /* //////FOR HOME SECTION///// */
@@ -42,12 +42,14 @@
   background-size: cover;
   margin: auto;
   z-index: 9;
-  transform: translate(15vh, 5vh);
+  transform: translate(15vw, 5vh);
 }
 
 /* /////FOR PORTFOLIO SECTION////// */
 
 .portfolio {
+  display: grid;
+  color:black;
   background-color: var(--color-yellow);
   transform: skew(0deg, -10deg);
   box-shadow: 0em -1em 1em gray ,0em 1em 1em gray;;
@@ -55,19 +57,39 @@
 }
 
 .Portfolio-grid {
+  
   display: grid;
   width: 70vw;
   margin: auto;
+  transform: skew(0deg,10deg);
 }
-
+.Portfolio-logo{
+  width:15vw;
+  height:15vw;
+  background-image: url('./chi-portfolio-logo.PNG');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 /* /////FOR RESUME SECTION////// */
 
 .resume {
   /* background-color:var(--color-rusty); */
+  
 }
 
 .Resume {
+  display: grid;
   width: 70vw;
   margin: auto;
   font-family: 'Montserrat', sans-serif;
+}
+
+.Contact-logo{
+  grid-area:"contact-logo";
+  width:13vw;
+  height:13vw;
+  background-image: url('./chi-contact-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  justify-self: end;
 }
