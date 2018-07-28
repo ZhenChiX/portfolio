@@ -6,9 +6,12 @@ class Main extends Component {
     return (
       <div className='Main'>
         <header className='Main-header'>
-          <h1 className='Main-title'>Web Developer</h1>
         </header>
-        <div className='Resume-logo'></div>
+        <div className='Main-logo'></div>
+        <div className='Main-intro'>
+        <h1>Hello,I'm Chi!</h1>
+        <h1>Web Developer</h1>
+        </div>
 
       </div>
     );
