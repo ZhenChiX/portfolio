@@ -1,5 +1,12 @@
 /* font-family: 'Montserrat', sans-serif; */
 
+:root {
+  --color-blue: #18121e;
+  --color-metal: #233237;
+  --color-rusty: #984b43;
+  --color-yellow: #eac67a;
+}
+
 @font-face {
   font-family: selima;
   src: url("./fonts/Selima\ .otf");
@@ -10,8 +17,8 @@ a {
   color: inherit;
 }
 
-h1,h2,a{
-  font-family:selima;
+h1, h2, a {
+  font-family: selima;
 }
 
 body {

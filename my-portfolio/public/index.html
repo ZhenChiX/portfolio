@@ -14,6 +14,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
   <link rel="favicon" href="../src/chi-resume-logo.png" />
   <!--
@@ -39,8 +40,8 @@
     <section class="container home">
       <div id="root"></div>
     </section>
-    <section class="container portfolio"></section>
-    <section class="container resume"></section>
+    <section id="chi-portfolio" class="container portfolio"></section>
+    <section id="chi-resume" class="container resume"></section>
 
   </main>
 
@@ -56,6 +57,10 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
 </body>
+<!-- CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- LOCAL -->
+<!-- <script src="../src/function.js"></script> -->
 <script src="../src/index.js"></script>
 <script src="../src/app.js"></script>
 
