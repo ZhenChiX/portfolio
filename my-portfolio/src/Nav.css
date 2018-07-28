@@ -1,31 +1,47 @@
+#side-nav {
+    position: fixed;
+    left: 0;
+    width: 3rem;
+    height: 100vh;
+    background-color: var(--color-blue);
+}
+
 .Nav ol {
     position: fixed;
+    display: grid;
     top: 30vh;
-    left: 1vw;
+    left: 1em;
+    margin: auto;
     /* transform: rotate(-10deg); */
+    /* margin: center; */
+}
 
+.Nav span {
+    cursor: pointer;
 }
 
 .Nav ol li {
     color: gray;
+    /* color:var(--color-yellow); */
     display: block;
-    transform: rotate(-10deg);
+    /* transform: rotate(-10deg); */
 }
 
 .Nav ol li:hover {
-    color: black;
+    color: var(--color-yellow);
+    transition-duration: 800ms;
 }
 
 .Nav a {
     color: black;
+    /* color:var(--color-rusty); */
     min-width: 3em;
     display: inline-block;
     font-size: 2em;
     font-weight: normal;
-    margin-left:0.5em;
+    margin-left: 0.8em;
     /* text-align: center; */
-    /* transform: rotate(-10deg); */
-
+    transform: rotate(-5deg);
 }
 
 .Nav a:hover {

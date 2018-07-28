@@ -1,15 +1,14 @@
-.Main {
-  text-align: center;
-  min-height: 150vh;
+.container {
+  margin: auto;
+  min-height: 80vh;
 }
 
 .Main-header {
-  background-color: #222;
+  background-color: var(--color-metal);
   height: 15vh;
   color: white;
   font-family: selima;
 }
-
 
 .Main-title {
   font-size: 2.5em;
@@ -22,10 +21,33 @@
   font-family: 'Montserrat', serif;
 }
 
-.Resume {
+.Resume-logo {
   background-image: url("./chi-resume-logo.png");
   height: 400px;
   width: 400px;
   background-size: cover;
   margin: auto;
+}
+/* /////FOR PORTFOLIO SECTION////// */
+
+.portfolio {
+  background-color: var(--color-yellow);
+}
+
+.Portfolio-grid{
+  display:grid;
+  width:70vw;
+  margin:auto;
+}
+
+
+/* /////FOR RESUME SECTION////// */
+.resume{
+  /* background-color:var(--color-rusty); */
+}
+
+.Resume {
+  width: 70vw;
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
 }
