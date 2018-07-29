@@ -3,13 +3,20 @@
 :root {
   --color-blue: #18121e;
   --color-metal: #233237;
-  --color-rusty: #984b43;
+  --color-red: #ff5c5c;
   --color-yellow: #eac67a;
+  --color-orange:#faa622;
+  --color-golden:#ffe52c;
 }
 
 @font-face {
   font-family: selima;
   src: url("./fonts/Selima\ .otf");
+}
+
+@font-face {
+  font-family: baka;
+  src: url("./fonts/Baka.ttf");
 }
 
 a {
@@ -29,4 +36,20 @@ body {
 
 h1 {
   font-size: 2em;
+}
+
+::-webkit-scrollbar {
+  width: 0.8em;
+  height: 0.8em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-yellow);
+  /* margin :0.5em auto; */
+  /* padding:0.5em auto; */
+  border: 0.1em solid white;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-metal);
 }

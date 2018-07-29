@@ -5,10 +5,12 @@ class Resume extends Component {
     render() {
         return (
             <div className='Resume'>
+                <div className="Contact-logo"></div>
+
                 <div>
-                    <h1>Skills:</h1>
+                    <h1>Technical Skills:</h1>
                     <ul>
-                        <li>Languages:</li>
+                        <li>Skill Sets:JavaScript,HTML5,CSS3,JQuery,AJAX,React,Express,MongoDB.</li>
                         <li>Tools:</li>
                         <li>Operating System:</li>
                     </ul>

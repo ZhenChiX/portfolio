@@ -1,11 +1,12 @@
 .container {
   margin: auto;
-  min-height: 95vh;
+  min-height: 100vh;
 }
 
 /* //////FOR HOME SECTION///// */
 
 .Main {
+  position: relative;
   display: grid;
   /* width:70vw; */
   margin: auto;
@@ -24,40 +25,133 @@
   box-shadow: 0em 1em 1em gray;
 }
 
-.Main-intro {
-  grid-area: Main-intro;
-  font-size: 2em;
-  font-family: 'Montserrat', serif;
-  margin: auto;
-  transform: translate(-20vw, -10vh);
-}
-
 .Main-logo {
   grid-area: Main-header;
   background-image: url("./chi-resume-logo.png");
   width: 25vw;
   height: 25vw;
-  /* min-width: 350px; */
-  /* min-height: 350px; */
   background-size: cover;
   margin: auto;
   z-index: 9;
-  transform: translate(15vh, 5vh);
+  transform: translate(15vw, 5vh);
+  box-shadow: 0.3em 0.5em 2em gray;
+  border-radius: 5%;
+  /* border-bottom-left-radius: 50%; */
+  /* border-bottom-right-radius: 40%; */
+  /* border-top-left-radius: 40%; */
+
+}
+
+.Main-intro {
+  position: absolute;
+  left: 40vw;
+  grid-area: Main-intro;
+  /* font-size:2vw; */
+  font-size: calc(1.2em + 1vw);
+  font-family: 'Montserrat', serif;
+  /* margin: auto; */
+  transform: translate(-20vw, -10vh);
+}
+
+.Main h1 {
+  font-family: baka;
+  font-size: 2em;
+  font-weight: 500;
+  /* text-align: center; */
+  animation: floating-text infinite ease-in-out 2000ms alternate;
+}
+
+.Main-skill {
+  position: relative;
+  display: grid;
+  grid-template-areas: "skill-h1";
+  width: 70vw;
+  /* grid-template-areas: ; */
+  margin: auto;
+  transform: translate(0vw, 10vh);
+  font-size: 1em;
+}
+
+.Main-skill>h1 {
+  grid-area: skill-h1;
+  color: var(--color-red);
+  font-weight: bold;
+  text-align: middle;
+}
+
+.Main-skill ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  transform: skew(0deg, -5deg);
+}
+
+.Main-skill ul li {
+  display: inline-block;
+  font-size: calc(1.5em + 1vw);
+  font-family: baka;
+  margin: 0.5em;
+  transform: skew(0deg, -5deg);
+}
+
+.Floating-1 {
+  animation: floating-text infinite ease-in-out 2000ms alternate;
+}
+
+.Floating-2 {
+  animation: floating-text infinite ease-in-out 1800ms alternate;
+}
+
+.Floating-3 {
+  animation: floating-text infinite ease-in-out 1600ms alternate;
+}
+
+.Floating-4 {
+  animation: floating-text infinite ease-in-out 1400ms alternate;
+}
+
+.Main-skill ul li:hover {
+  /* transform: scale(1.2); */
+  /* cursor: pointer; */
+}
+
+@keyframes floating-text {
+  0% {
+    transform: translateY(.2em);
+    text-shadow: 0 0.2em 0.2em gray;
+  }
+  100% {
+    /* transform: translateY(.2em); */
+    text-shadow: 0 0.5em 0.5em gray;
+  }
 }
 
 /* /////FOR PORTFOLIO SECTION////// */
 
 .portfolio {
+  display: grid;
+  color: black;
   background-color: var(--color-yellow);
   transform: skew(0deg, -10deg);
-  box-shadow: 0em -1em 1em gray ,0em 1em 1em gray;;
-
+  box-shadow: 0em -1em 1em gray, 0em 1em 1em gray;
+  ;
 }
 
 .Portfolio-grid {
   display: grid;
   width: 70vw;
   margin: auto;
+  transform: skew(0deg, 10deg);
+}
+
+.Portfolio-logo {
+  width: 15vw;
+  height: 15vw;
+  background-image: url('./chi-portfolio-logo.PNG');
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-shadow: 0.3em 0.5em 2em gray;
+  border-radius: 5%;
+
 }
 
 /* /////FOR RESUME SECTION////// */
@@ -67,7 +161,20 @@
 }
 
 .Resume {
+  display: grid;
   width: 70vw;
   margin: auto;
   font-family: 'Montserrat', sans-serif;
+}
+
+.Contact-logo {
+  grid-area: "contact-logo";
+  width: 13vw;
+  height: 13vw;
+  background-image: url('./chi-contact-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  justify-self: end;
+  box-shadow: 0.3em 0.5em 2em gray;
+  border-radius: 5%;
 }
