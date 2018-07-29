@@ -16,6 +16,7 @@
 }
 
 .Nav span {
+    font-size: 1.2em;
     cursor: pointer;
 }
 
@@ -44,9 +45,9 @@
 }
 
 .Nav a:hover {
-    /* color: black; */
+    /* color:#ff5c5c; */
     background-image: url('./highlight.png');
     background-size: 100% 115%;
-    transition-duration: 800ms;
+    transition-duration: 500ms;
     opacity: 0.8;
 }
