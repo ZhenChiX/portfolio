@@ -58,3 +58,7 @@
     transition-duration: 500ms;
     opacity: 0.8;
 }
+
+.current{
+    color: var(--color-yellow) !important;
+}

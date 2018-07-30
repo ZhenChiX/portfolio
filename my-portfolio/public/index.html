@@ -67,12 +67,12 @@
 <script>
   $(function hightLight() {
     $('.Nav ol').on('click', 'li', function () {
-      $('.Nav ol li').css('color','gray');
       $('.Nav ol a').removeClass('Active');
-      console.log('span');
+      $('.Nav ol li').removeClass('current');
+    
       $(this).find('a').addClass('Active');
-      $(this).css('color', 'var(--color-yellow');
-      console.log(this);
+      $(this).addClass('current');
+    
 
     });
 
