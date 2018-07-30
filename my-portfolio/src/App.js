@@ -11,6 +11,7 @@ class Main extends Component {
         <div className='Main-intro'>
           <h1>Hello,I'm Chi.</h1>
           <h1>I'm a front-end web developer.</h1>
+        <hr/>
         </div>
         <div className="Main-skill">
           <h1>SKILLS : </h1>
