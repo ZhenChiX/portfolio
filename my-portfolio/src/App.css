@@ -5,6 +5,14 @@
 
 /* //////FOR HOME SECTION///// */
 
+body {
+  /* background-color: #f5f5f5; */
+  background-attachment: fixed;
+  background-image: url("./3147.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .Main {
   position: relative;
   display: grid;
@@ -35,11 +43,10 @@
   z-index: 9;
   transform: translate(15vw, 5vh);
   box-shadow: 0.3em 0.5em 2em gray;
-  border-radius: 5%;
+  border-radius: 50%;
   /* border-bottom-left-radius: 50%; */
   /* border-bottom-right-radius: 40%; */
   /* border-top-left-radius: 40%; */
-
 }
 
 .Main-intro {
@@ -51,7 +58,16 @@
   font-family: 'Montserrat', serif;
   /* margin: auto; */
   transform: translate(-20vw, -10vh);
+  /* padding-bottom: 2vh; */
+  /* border-bottom: 3px solid var(--color-red); */
 }
+
+/* hr {
+  /* background: var(--color-red); */
+
+/* border: 1px solid var(--color-red); */
+
+/* }  */
 
 .Main h1 {
   font-family: baka;
@@ -91,6 +107,7 @@
   font-family: baka;
   margin: 0.5em;
   transform: skew(0deg, -5deg);
+  text-decoration: underline var(--color-red);
 }
 
 .Floating-1 {
@@ -107,11 +124,6 @@
 
 .Floating-4 {
   animation: floating-text infinite ease-in-out 1400ms alternate;
-}
-
-.Main-skill ul li:hover {
-  /* transform: scale(1.2); */
-  /* cursor: pointer; */
 }
 
 @keyframes floating-text {
@@ -151,7 +163,6 @@
   background-repeat: no-repeat;
   box-shadow: 0.3em 0.5em 2em gray;
   border-radius: 5%;
-
 }
 
 /* /////FOR RESUME SECTION////// */

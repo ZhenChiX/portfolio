@@ -18,11 +18,11 @@
 .Nav span {
     font-size: 1.2em;
     cursor: pointer;
+    /* color:gray; */
 }
 
 .Nav ol li {
     color: gray;
-    /* color:var(--color-yellow); */
     display: block;
     /* transform: rotate(-10deg); */
 }
@@ -50,4 +50,15 @@
     background-size: 100% 115%;
     transition-duration: 500ms;
     opacity: 0.8;
+}
+
+.Active {
+    background-image: url('./highlight.png');
+    background-size: 100% 115%;
+    transition-duration: 500ms;
+    opacity: 0.8;
+}
+
+.current{
+    color: var(--color-yellow) !important;
 }

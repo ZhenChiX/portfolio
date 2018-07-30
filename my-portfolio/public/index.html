@@ -36,7 +36,7 @@
   <main>
     <nav id="side-nav">
     </nav>
-    <section class="container home">
+    <section id="chi-home" class="container home">
       <div id="root"></div>
     </section>
     <section id="chi-portfolio" class="container portfolio"></section>
@@ -62,5 +62,21 @@
 <!-- <script src="../src/function.js"></script> -->
 <script src="../src/index.js"></script>
 <script src="../src/app.js"></script>
+<!-- <script src="../src/function.js"></script> -->
+
+<script>
+  $(function hightLight() {
+    $('.Nav ol').on('click', 'li', function () {
+      $('.Nav ol a').removeClass('Active');
+      $('.Nav ol li').removeClass('current');
+    
+      $(this).find('a').addClass('Active');
+      $(this).addClass('current');
+    
+
+    });
+
+  });
+</script>
 
 </html>
