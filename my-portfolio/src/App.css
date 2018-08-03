@@ -6,7 +6,6 @@
 /* //////FOR HOME SECTION///// */
 
 body {
-  /* background-color: #f5f5f5; */
   background-attachment: fixed;
   background-image: url("./3147.jpg");
   background-size: cover;
@@ -44,9 +43,6 @@ body {
   transform: translate(15vw, 5vh);
   box-shadow: 0.3em 0.5em 2em gray;
   border-radius: 50%;
-  /* border-bottom-left-radius: 50%; */
-  /* border-bottom-right-radius: 40%; */
-  /* border-top-left-radius: 40%; */
 }
 
 .Main-intro {
@@ -56,24 +52,13 @@ body {
   /* font-size:2vw; */
   font-size: calc(1.2em + 1vw);
   font-family: 'Montserrat', serif;
-  /* margin: auto; */
   transform: translate(-20vw, -10vh);
-  /* padding-bottom: 2vh; */
-  /* border-bottom: 3px solid var(--color-red); */
 }
-
-/* hr {
-  /* background: var(--color-red); */
-
-/* border: 1px solid var(--color-red); */
-
-/* }  */
 
 .Main h1 {
   font-family: baka;
   font-size: 2em;
   font-weight: 500;
-  /* text-align: center; */
   animation: floating-text infinite ease-in-out 2000ms alternate;
 }
 
@@ -150,12 +135,14 @@ body {
 
 .Portfolio-grid {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
   width: 70vw;
   margin: auto;
   transform: skew(0deg, 10deg);
 }
 
 .Portfolio-logo {
+  display: grid;
   width: 15vw;
   height: 15vw;
   background-image: url('./chi-portfolio-logo.PNG');
@@ -163,6 +150,24 @@ body {
   background-repeat: no-repeat;
   box-shadow: 0.3em 0.5em 2em gray;
   border-radius: 5%;
+  align-self  : center;
+
+}
+
+.Portfolio-grid h1 {
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: baka;
+  font-size: calc(1.5em + 1vw);
+  text-decoration: underline var(--color-red);
+
+
+}
+
+.Desktop {
+  width: 32vw;
+  height: 18vw;
+  box-shadow: 0.2em 0.5em 0.5em gray;
+  border-radius: 3%;
 }
 
 /* /////FOR RESUME SECTION////// */
