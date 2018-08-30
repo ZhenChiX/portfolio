@@ -150,24 +150,44 @@ body {
   background-repeat: no-repeat;
   box-shadow: 0.3em 0.5em 2em gray;
   border-radius: 5%;
-  align-self  : center;
+  align-self: center;
+}
 
+.Tilt-inner {
+  display: grid;
+  grid-template-areas: "tile-h1" "tile-center";
+  cursor: pointer;
 }
 
 .Portfolio-grid h1 {
-  /* font-family: 'Montserrat', sans-serif; */
+  color: var(--color-metal);
+  grid-area: tile-h1;
   font-family: baka;
   font-size: calc(1.5em + 1vw);
   text-decoration: underline var(--color-red);
-
-
 }
 
 .Desktop {
+  grid-area: tile-center;
   width: 32vw;
   height: 18vw;
   box-shadow: 0.2em 0.5em 0.5em gray;
   border-radius: 3%;
+}
+
+.Portfolio-grid p {
+  opacity: 0;
+  grid-area: tile-center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: calc(1em + 0.5vw);
+  font-weight: bold;
+  color: white;
+  margin: auto;
+  transition-duration: 800ms;
+}
+
+.Tilt-inner:hover p {
+  opacity: 1;
 }
 
 /* /////FOR RESUME SECTION////// */
