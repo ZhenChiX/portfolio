@@ -12,15 +12,6 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
   <link rel="favicon" href="../src/chi-resume-logo.png" />
-  <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
   <title>Chi's Portforlio</title>
 </head>
 
@@ -40,36 +31,31 @@
   </main>
 
   <footer id="footer"></footer>
-  <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
 </body>
 <!-- CDN -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 <!-- LOCAL -->
-<script src="../src/index.js"></script>
-<script src="../src/app.js"></script>
-<!-- <script src="../src/function.js"></script> -->
+<script src="../src/function.js"></script>
+<script src="../src/Index/index.js"></script>
+<script src="../src/App/App.js"></script>
 
-<script>
-  $(function hightLight() {
-    $('.Nav ol').on('click', 'li', function () {
-      $('.Nav ol a').removeClass('Active');
-      $('.Nav ol li').removeClass('current');
 
-      $(this).find('a').addClass('Active');
-      $(this).addClass('current');
+<!-- <script>
+  $(window).scroll(function () {
+    var position = $(this).scrollTop();
 
+    $('.section').each(function () {
+      var target = $(this).offset().top;
+      var id = $(this).attr('id');
+
+      if (position >= target) {
+        $('#navigation > ul > li > a').removeClass('active');
+        $('#navigation > ul > li > a[href=#' + id + ']').addClass('active');
+
+      }
     });
-
   });
-</script>
+</script> -->
 
 </html>
