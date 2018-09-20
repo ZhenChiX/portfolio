@@ -45,15 +45,14 @@
 }
 
 .Nav a:hover {
-    /* color:#ff5c5c; */
-    background-image: url('./highlight.png');
+    background-image: url('../highlight.png');
     background-size: 100% 115%;
     transition-duration: 500ms;
     opacity: 0.8;
 }
 
-.Active {
-    background-image: url('./highlight.png');
+.active {
+    background-image: url('../highlight.png');
     background-size: 100% 115%;
     transition-duration: 500ms;
     opacity: 0.8;

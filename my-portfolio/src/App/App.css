@@ -7,7 +7,7 @@
 
 body {
   background-attachment: fixed;
-  background-image: url("./3147.jpg");
+  background-image: url("../3147.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -34,7 +34,7 @@ body {
 
 .Main-logo {
   grid-area: Main-header;
-  background-image: url("./chi-resume-logo.png");
+  background-image: url("../chi-resume-logo.png");
   width: 25vw;
   height: 25vw;
   background-size: cover;
@@ -145,7 +145,7 @@ body {
   display: grid;
   width: 15vw;
   height: 15vw;
-  background-image: url('./chi-portfolio-logo.PNG');
+  background-image: url('../chi-portfolio-logo.PNG');
   background-size: contain;
   background-repeat: no-repeat;
   box-shadow: 0.3em 0.5em 2em gray;
@@ -207,7 +207,7 @@ body {
   grid-area: "contact-logo";
   width: 13vw;
   height: 13vw;
-  background-image: url('./chi-contact-logo.png');
+  background-image: url('../chi-contact-logo.png');
   background-size: contain;
   background-repeat: no-repeat;
   justify-self: end;

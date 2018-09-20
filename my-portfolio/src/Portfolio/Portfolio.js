@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Tilt from 'react-tilt';
-import './App.css';
+import '../App/App.css';
 
 class Modal_gt extends Component {
 
@@ -45,7 +45,7 @@ class Portfolio extends Component {
                 <Tilt className="Tilt" options={{ max: 25 }}  >
                     <div className="Tilt-inner">
                         <h1>Game Tracker</h1>
-                        <img className="Desktop" src={require("./mockup/desktop-gt.png")} alt="project-preview" />
+                        <img className="Desktop" src={require("../mockup/desktop-gt.png")} alt="project-preview" />
                         <p>Click For Detail</p>
                     </div>
                 </Tilt>
@@ -53,7 +53,7 @@ class Portfolio extends Component {
 
                     <div className="Tilt-inner">
                         <h1>Movie Royale</h1>
-                        <img className="Desktop" src={require("./mockup/desktop-mr2.png")} alt="project-preview" />
+                        <img className="Desktop" src={require("../mockup/desktop-mr2.png")} alt="project-preview" />
 
                         <p>Click For Detail</p>
                     </div>
@@ -62,7 +62,7 @@ class Portfolio extends Component {
 
                     <div className="Tilt-inner">
                         <h1>Code Potato</h1>
-                        <img className="Desktop" src={require("./mockup/desktop-cp.png")} alt="project-preview" />
+                        <img className="Desktop" src={require("../mockup/desktop-cp.png")} alt="project-preview" />
 
                         <p>Click For Detail</p>
                     </div>
