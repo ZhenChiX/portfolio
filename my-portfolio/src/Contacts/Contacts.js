@@ -1,8 +1,9 @@
 import React, { Component, Fragment } from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import MenuItem from '@material-ui/core/MenuItem';
+// import MenuItem from '@material-ui/core/MenuItem';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
+
 
 import '../App/App.css';
 
@@ -12,7 +13,7 @@ const styles = theme => ({
         display: 'grip',
         flexWrap: 'wrap',
     },
-    
+
     textField: {
         marginLeft: theme.spacing.unit,
         marginRight: theme.spacing.unit,
@@ -27,6 +28,7 @@ const styles = theme => ({
     button: {
         width: 200,
     }
+
 });
 
 
@@ -52,7 +54,7 @@ class Contact extends Component {
                 <Fragment>
                     <div className="Contact-logo"></div>
 
-                    <form className={classes.container} noValidate autoComplete="off">
+                    <form id="form-submit" className={classes.container} noValidate autoComplete="on">
 
                         <TextField
                             // required
@@ -64,6 +66,8 @@ class Contact extends Component {
                             onChange={this.handleChange('name')}
                             margin="normal"
                             variant="outlined"
+                            autoComplete="name"
+                           
                         />
 
                         <TextField
@@ -73,9 +77,9 @@ class Contact extends Component {
                             type="email"
                             name="email"
                             placeholder="Email"
-                            autoComplete="email"
                             margin="normal"
                             variant="outlined"
+                            autoComplete="email"
                         />
 
                         <TextField
@@ -87,6 +91,8 @@ class Contact extends Component {
                             fullWidth
                             variant="outlined"
                             multiline
+                            autoComplete=""
+
                         />
                         <TextField
                             id="outlined-required"
@@ -97,21 +103,21 @@ class Contact extends Component {
                             multiline
                             rows="10"
                             variant="outlined"
+                            autoComplete=""
+
 
                         />
 
 
-                        <Button variant="extendedFab" aria-label="Delete" className={classes.button} id="contacts-submit"><span className="fas fa-share-square"></span>SEND
-                        
+                        <Button variant="extendedFab" aria-label="Delete" className={classes.button} id="submit" type="submit" ><span className="fas fa-share-square"></span>SEND
                         </Button>
-                     
-
                     </form>
                 </Fragment>
             </div>
         )
     }
 }
+
 
 
 

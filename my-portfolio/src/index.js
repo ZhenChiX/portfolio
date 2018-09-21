@@ -6,6 +6,9 @@ import Portfolio from './Portfolio/Portfolio';
 import Contacts from './Contacts/Contacts';
 import Footer from './Footer/Footer';
 import Nav from './Nav/Nav';
+import './function';
+
+
 
 import registerServiceWorker from './registerServiceWorker';
 
@@ -26,6 +29,10 @@ ReactDOM.render(<Footer />, document.getElementById('footer'));
 
 registerServiceWorker();
 /////BASIC FUNCTION/////
+
+
+
+
 /////SMOOTH SCROLLING/////
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -63,3 +70,15 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 
 })
+
+/////SUBMIT CONTACTS/////
+
+
+document.getElementById('form-submit').addEventListener('submit', getInfo)
+
+
+function getInfo(e) {
+    e.preventDefault();
+    console.log('its working')
+}
+
