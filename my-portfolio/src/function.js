@@ -1,3 +1,5 @@
+import React, { Component } from 'react';
+import firebase from 'firebase'
 
 // Initialize Firebase
 var config = {
@@ -11,16 +13,5 @@ var config = {
 firebase.initializeApp(config);
 
 
-
-
-// contact submit event listner
-document.getElementById('contacts-submit').addEventListener('click', function getInfo(e) {
-  document.getElementById(id).value;
-  console.log('its working')
-}
-
-)
-
-// function for getting form data 
-alert('pop')
+export default firebase;
 
