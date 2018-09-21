@@ -67,7 +67,6 @@ body {
   display: grid;
   grid-template-areas: "skill-h1";
   width: 70vw;
-  /* grid-template-areas: ; */
   margin: auto;
   transform: translate(0vw, 10vh);
   font-size: 1em;
@@ -190,17 +189,16 @@ body {
   opacity: 1;
 }
 
-/* /////FOR RESUME SECTION////// */
+/* /////FOR CONTACTS SECTION////// */
 
-.resume {
-  /* background-color:var(--color-rusty); */
-}
-
-.Resume {
+.Contact {
+  position: relative;
+  font-family: baka;
   display: grid;
   width: 70vw;
   margin: auto;
   font-family: 'Montserrat', sans-serif;
+  align-items: center;
 }
 
 .Contact-logo {
@@ -214,3 +212,4 @@ body {
   box-shadow: 0.3em 0.5em 2em gray;
   border-radius: 5%;
 }
+

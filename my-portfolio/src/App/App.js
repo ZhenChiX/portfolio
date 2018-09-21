@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+
 import './App.css';
+
 
 class Main extends Component {
   render() {
@@ -23,7 +25,7 @@ class Main extends Component {
             <li className="Floating-4">AJAX</li>
             <li className="Floating-3">React</li>
             <li className="Floating-2">Express</li>
-            <li className="Floating-1">MongoDB</li>
+            <li className="Floating-1">FireBase</li>
 
           </ul>
         </div>
