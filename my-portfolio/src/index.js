@@ -26,6 +26,10 @@ ReactDOM.render(<Footer />, document.getElementById('footer'));
 
 registerServiceWorker();
 /////BASIC FUNCTION/////
+
+
+
+
 /////SMOOTH SCROLLING/////
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {

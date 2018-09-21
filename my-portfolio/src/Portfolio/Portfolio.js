@@ -2,18 +2,18 @@ import React, { Component } from 'react';
 import Tilt from 'react-tilt';
 import '../App/App.css';
 
-class Modal_gt extends Component {
+// class Modal_gt extends Component {
 
-    render() {
-        return (
-            <div>
-                <img className="Mobile" alt="project-preview" />
-                <img className="Mobile" alt="project-preview" />
-                <h1>THIS IS MODAL</h1>
-            </div>
-        );
-    }
-}
+//     render() {
+//         return (
+//             <div>
+//                 <img className="Mobile" alt="project-preview" />
+//                 <img className="Mobile" alt="project-preview" />
+//                 <h1>THIS IS MODAL</h1>
+//             </div>
+//         );
+//     }
+// }
 
 
 class Portfolio extends Component {
@@ -68,7 +68,7 @@ class Portfolio extends Component {
                     </div>
 
                 </Tilt>
-                <Modal_gt />
+                {/* <Modal_gt /> */}
             </div>
         );
     }

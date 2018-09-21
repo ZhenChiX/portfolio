@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import MenuItem from '@material-ui/core/MenuItem';
+// import MenuItem from '@material-ui/core/MenuItem';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 
@@ -101,7 +101,7 @@ class Contact extends Component {
                         />
 
 
-                        <Button variant="extendedFab" aria-label="Delete" className={classes.button} id="contacts-submit"><span className="fas fa-share-square"></span>SEND
+                        <Button variant="extendedFab" aria-label="Delete" className={classes.button} id="contacts-submit" type = "button" ><span className="fas fa-share-square"></span>SEND
                         
                         </Button>
                      
