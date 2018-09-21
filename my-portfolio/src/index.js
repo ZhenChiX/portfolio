@@ -7,6 +7,7 @@ import Contacts from './Contacts/Contacts';
 import Footer from './Footer/Footer';
 import Nav from './Nav/Nav';
 import './function';
+// import './Test';
 
 
 
@@ -80,5 +81,5 @@ document.getElementById('form-submit').addEventListener('submit', getInfo)
 function getInfo(e) {
     e.preventDefault();
     console.log('its working')
-}
+};
 
