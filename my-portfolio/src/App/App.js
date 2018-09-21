@@ -34,6 +34,6 @@ class Main extends Component {
   }
 }
 
-
+console.log('this is app.js');
 export default Main;
 

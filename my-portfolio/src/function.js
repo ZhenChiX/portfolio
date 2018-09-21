@@ -13,6 +13,6 @@ import firebase from 'firebase';
   };
   firebase.initializeApp(config);
 console.log('firebase connected')
-console.log('work')
+console.log('work');
 // export default fire;
 
