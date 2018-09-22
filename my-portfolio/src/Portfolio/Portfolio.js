@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Tilt from 'react-tilt';
 import '../App/App.css';
+// import Modal from '@material-ui/core/Modal';
 
 // class Modal_gt extends Component {
 
@@ -68,7 +69,7 @@ class Portfolio extends Component {
                     </div>
 
                 </Tilt>
-                {/* <Modal_gt /> */}
+                {/* <Modal>Modal right here</Modal> */}
             </div>
         );
     }
