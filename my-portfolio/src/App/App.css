@@ -189,6 +189,30 @@ body {
   opacity: 1;
 }
 
+#portfolio-modal {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 60vw;
+  height: 40vw;
+  background-image: url("../3147.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0.3em 0.5em 2em grey;
+  border-radius: 3%;
+  z-index: 10;
+}
+
+#portfolio-modal img {
+  display: grid;
+  width: 30vw;
+  height: 30vw;
+}
+
+#closeModal {
+  animation: floating-text infinite ease-in-out 2000ms alternate;
+}
+
 /* /////FOR CONTACTS SECTION////// */
 
 .Contact {
@@ -212,4 +236,3 @@ body {
   box-shadow: 0.3em 0.5em 2em gray;
   border-radius: 5%;
 }
-
