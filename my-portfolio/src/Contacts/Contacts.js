@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 // import MenuItem from '@material-ui/core/MenuItem';
 import TextField from '@material-ui/core/TextField';
@@ -36,7 +36,6 @@ const styles = theme => ({
 class Contact extends Component {
     state = {
         name: 'name',
-        age: '30',
         multiline: 'Controlled',
     };
 
@@ -56,7 +55,6 @@ class Contact extends Component {
 
                 <form id="form-submit"
                     className={classes.container}
-                    
                     // noValidate
                     autoComplete="on">
 
