@@ -7,6 +7,7 @@ import Contacts from './Contacts/Contacts';
 import Footer from './Footer/Footer';
 import Nav from './Nav/Nav';
 import './function';
+import firebase from 'firebase';
 // import './Test';
 
 
@@ -72,6 +73,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
 })
 
+
+//Reference message
+// var messagesRef = firebase.database().ref('here is the message');
+var messagesRef = firebase.database().ref('You have new messages')
+
+
+
+/////DISPLAY DATABASE/////
+
+
+
 /////SUBMIT CONTACTS/////
 
 
@@ -81,5 +93,37 @@ document.getElementById('form-submit').addEventListener('submit', getInfo)
 function getInfo(e) {
     e.preventDefault();
     console.log('its working')
+
+    var name = getInputVal('form-name');
+    var email = getInputVal('form-email');
+    var subject = getInputVal('form-subject');
+    var message = getInputVal('form-message');
+
+    console.log(name);
+    console.log(email);
+    console.log(subject);
+    console.log(message);
+
+    saveMessage(name, email, subject, message);
+    document.getElementById('form-submit').reset();
+    
+
 };
 
+/////FUNCTION TO GET FORM VALUES /////
+function getInputVal(id) {
+    return document.getElementById(id).value;
+}
+
+/////SAVE MESSAGE TO DATABSAE/////
+function saveMessage(name, email, subject, message) {
+    var newMessageRef = messagesRef.push();
+    newMessageRef.set({
+        name: name,
+        email: email,
+        subject: subject,
+        message: message,
+
+    })
+
+}

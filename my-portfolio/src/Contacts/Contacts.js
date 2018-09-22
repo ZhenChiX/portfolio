@@ -19,6 +19,7 @@ const styles = theme => ({
         marginRight: theme.spacing.unit,
 
     },
+
     dense: {
         marginTop: 16,
     },
@@ -49,71 +50,75 @@ class Contact extends Component {
     render() {
         const { classes } = this.props;
         return (
-
             <div className='Contact'>
-                <Fragment>
-                    <div className="Contact-logo"></div>
 
-                    <form id="form-submit" className={classes.container} noValidate autoComplete="on">
+                <div className="Contact-logo"></div>
 
-                        <TextField
-                            // required
-                            id="outlined-name"
-                            label="Name"
-                            className={classes.textField}
-                            // value={this.state.name}
-                            placeholder="Name"
-                            onChange={this.handleChange('name')}
-                            margin="normal"
-                            variant="outlined"
-                            autoComplete="name"
-                           
-                        />
+                <form id="form-submit"
+                    className={classes.container}
+                    
+                    // noValidate
+                    autoComplete="on">
 
-                        <TextField
-                            id="outlined-email-input"
-                            label="Email"
-                            className={classes.textField}
-                            type="email"
-                            name="email"
-                            placeholder="Email"
-                            margin="normal"
-                            variant="outlined"
-                            autoComplete="email"
-                        />
-
-                        <TextField
-                            id="outlined-required"
-                            label="Subject"
-                            placeholder="Subject"
-                            className={classes.textField}
-                            margin="normal"
-                            fullWidth
-                            variant="outlined"
-                            multiline
-                            autoComplete=""
-
-                        />
-                        <TextField
-                            id="outlined-required"
-                            label=""
-                            className={classes.textField}
-                            margin="normal"
-                            fullWidth
-                            multiline
-                            rows="10"
-                            variant="outlined"
-                            autoComplete=""
+                    <TextField
+                        id="form-name"
+                        label="Name"
+                        className={classes.textField}
+                        // value={this.state.name}
+                        placeholder="Name"
+                        onChange={this.handleChange('name')}
+                        margin="normal"
+                        variant="outlined"
+                        autoComplete="name"
 
 
-                        />
+                    />
+
+                    <TextField
+                        id="form-email"
+                        label="Email"
+                        className={classes.textField}
+                        type="email"
+                        name="email"
+                        placeholder="Email"
+                        margin="normal"
+                        variant="outlined"
+                        autoComplete="email"
+                    />
+
+                    <TextField
+                        id="form-subject"
+                        label="Subject"
+                        placeholder="Subject"
+                        className={classes.textField}
+                        margin="normal"
+                        fullWidth
+                        variant="outlined"
+                        multiline
+                        autoComplete=""
+
+                    />
+                    <TextField
+                        id="form-message"
+                        label="Message"
+                        className={classes.textField}
+                        margin="normal"
+                        fullWidth
+                        multiline
+                        rows="10"
+                        variant="outlined"
+                        autoComplete=""
 
 
-                        <Button variant="extendedFab" aria-label="Delete" className={classes.button} id="submit" type="submit" ><span className="fas fa-share-square"></span>SEND
+                    />
+
+
+                    <Button variant="extendedFab" aria-label="Delete" className={classes.button} id="submit" type="submit" ><span className="fas fa-share-square"></span>SEND
                         </Button>
-                    </form>
-                </Fragment>
+                </form>
+
             </div>
+
         )
     }
 }
