@@ -5,6 +5,7 @@ import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 
 
+
 import '../App/App.css';
 
 
@@ -59,6 +60,7 @@ class Contact extends Component {
                     autoComplete="on">
 
                     <TextField
+                        required
                         id="form-name"
                         label="Name"
                         className={classes.textField}
@@ -73,6 +75,7 @@ class Contact extends Component {
                     />
 
                     <TextField
+                        required
                         id="form-email"
                         label="Email"
                         className={classes.textField}
@@ -85,6 +88,7 @@ class Contact extends Component {
                     />
 
                     <TextField
+                        required
                         id="form-subject"
                         label="Subject"
                         placeholder="Subject"
@@ -97,6 +101,7 @@ class Contact extends Component {
 
                     />
                     <TextField
+                        required
                         id="form-message"
                         label="Message"
                         className={classes.textField}
@@ -114,7 +119,7 @@ class Contact extends Component {
                     <Button variant="extendedFab" aria-label="Delete" className={classes.button} id="submit" type="submit" ><span className="fas fa-share-square"></span>SEND
                         </Button>
                 </form>
-
+                
             </div>
 
         )
