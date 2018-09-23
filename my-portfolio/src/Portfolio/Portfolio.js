@@ -1,7 +1,10 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import Tilt from 'react-tilt';
 import '../App/App.css';
 // import Modal from '@material-ui/core/Modal';
+import Grid from '@material-ui/core/Grid';
+import Button from '@material-ui/core/Button';
+
 
 let portfolioDetail = [];
 
@@ -94,13 +97,19 @@ class Portfolio extends Component {
 
                 {this.state.showModal
                     ? (
-                        <div id='portfolio-modal'>
-                            <img src={portfolioDetail[0]} alt="YOUR ASS" />
-                            <img src={portfolioDetail[1]} alt="YOUR ASS" />
-                            <button id="closeModal" onClick={this.handleCloseModal} > asdasdasd</button>
-                        </div>
+                        <Grid container spacing={0} id='portfolio-modal'>
+                            <Grid container item xs={12} md={6} justify='center'>
+                                <img src={portfolioDetail[0]} alt="YOUR ASS" />
+                            </Grid>
+                            <Grid container item xs={12} md={6} justify='center'>
+                                <img src={portfolioDetail[1]} alt="YOUR ASS" />
+                            </Grid>
+                            <Grid container item xs={12} justify='center'>
+                                <Button variant='contained' id="closeModal" onClick={this.handleCloseModal} > Close</Button>
+                            </Grid>
+                        </Grid>
                     )
-                    : undefined}
+                    : null}
 
             </div>
         );

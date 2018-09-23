@@ -3,6 +3,10 @@
   min-height: 100vh;
 }
 
+.Contacts {
+  min-height: 80vh;
+}
+
 /* //////FOR HOME SECTION///// */
 
 body {
@@ -191,10 +195,10 @@ body {
 
 #portfolio-modal {
   position: absolute;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 60vw;
-  height: 40vw;
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr; */
+  width: 70vw;
+  /* height: 40vw; */
   background-image: url("../3147.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -204,13 +208,20 @@ body {
 }
 
 #portfolio-modal img {
-  display: grid;
-  width: 30vw;
-  height: 30vw;
+  /* display: block; */
+  width: 35vw;
+  height: 35vw;
 }
 
 #closeModal {
-  animation: floating-text infinite ease-in-out 2000ms alternate;
+  width: calc(0.5em + 2vw);
+  margin: 1em;
+  background-color: var(--color-yellow);
+}
+
+#closeModal:hover {
+  /* background-color: #d5d5d5; */
+  box-shadow: 0px 2px 4px -4px rgba(0, 0, 0, 0.2), 0px 4px 8px 2px rgba(0, 0, 0, 0.14), 0px 5px 15px 4px rgba(0, 0, 0, 0.12);
 }
 
 /* /////FOR CONTACTS SECTION////// */
