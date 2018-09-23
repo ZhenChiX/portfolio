@@ -99,14 +99,14 @@ function getInfo(e) {
     var subject = getInputVal('form-subject');
     var message = getInputVal('form-message');
 
-    console.log(name);
-    console.log(email);
-    console.log(subject);
-    console.log(message);
+    // console.log(name);
+    // console.log(email);
+    // console.log(subject);
+    // console.log(message);
 
     saveMessage(name, email, subject, message);
     document.getElementById('form-submit').reset();
-    
+
 
 };
 
@@ -117,7 +117,10 @@ function getInputVal(id) {
 
 /////SAVE MESSAGE TO DATABSAE/////
 function saveMessage(name, email, subject, message) {
-    var newMessageRef = messagesRef.push();
+    // var newMessageRef = messagesRef.push();
+
+    let newMessageRef = messagesRef.push();
+
     newMessageRef.set({
         name: name,
         email: email,

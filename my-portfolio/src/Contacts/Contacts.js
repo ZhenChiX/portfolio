@@ -116,7 +116,7 @@ class Contact extends Component {
                     />
 
 
-                    <Button variant="extendedFab" aria-label="Delete" className={classes.button} id="submit" type="submit" ><span className="fas fa-share-square"></span>SEND
+                    <Button variant="extendedFab" aria-label="Delete" className={classes.button} id="submit" type="submit" ><span className="fas fa-share-square">&nbsp;</span>SEND
                         </Button>
                 </form>
                 
