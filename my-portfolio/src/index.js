@@ -8,9 +8,6 @@ import Footer from './Footer/Footer';
 import Nav from './Nav/Nav';
 import './function';
 import firebase from 'firebase';
-// import './Test';
-
-
 
 import registerServiceWorker from './registerServiceWorker';
 
@@ -129,4 +126,12 @@ function saveMessage(name, email, subject, message) {
 
     })
 
+}
+
+/////GITHUB LINK/////
+document.querySelector('.fa-github').addEventListener('click', githubLink);
+function githubLink() {
+    window.open('https://github.com/ZhenChiX','_blank');
+    
+    console.log('click');
 }
