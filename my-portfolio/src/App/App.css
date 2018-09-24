@@ -42,6 +42,8 @@ body {
   background-image: url("../chi-resume-logo.png");
   width: 25vw;
   height: 25vw;
+  min-width: 200px;
+  min-height: 200px;
   background-size: cover;
   margin: auto;
   z-index: 9;
@@ -129,6 +131,7 @@ body {
 /* /////FOR PORTFOLIO SECTION////// */
 
 .portfolio {
+  /* position: relative; */
   display: grid;
   color: black;
   background-image: url('../1160.jpg');
@@ -153,6 +156,8 @@ body {
   display: grid;
   width: 15vw;
   height: 15vw;
+  min-width: 150px;
+  min-height: 150px;
   background-image: url('../chi-portfolio-logo.PNG');
   background-size: contain;
   background-repeat: no-repeat;
@@ -177,7 +182,7 @@ body {
 
 .Desktop {
   grid-area: tile-center;
-  width: 32vw;
+  /* width: 32vw; */
   height: 18vw;
   box-shadow: 0.2em 0.5em 0.5em gray;
   border-radius: 3%;
@@ -204,6 +209,7 @@ body {
   /* grid-template-columns: 1fr 1fr; */
   width: 70vw;
   right: -10vw;
+  /* top: -15vh; */
   /* height: 40vw; */
   background-image: url("../3147.jpg");
   background-repeat: no-repeat;
@@ -216,8 +222,7 @@ body {
 #link-button {
   background-color: var(--color-yellow);
   margin: 1em;
-  min-width: 150px;
-  width: 25vw
+  min-width: 25vw;
 }
 
 #link-button:hover {
@@ -257,10 +262,50 @@ body {
   grid-area: "contact-logo";
   width: 13vw;
   height: 13vw;
+  min-width: 150px;
+  min-height: 150px;
   background-image: url('../chi-contact-logo.png');
   background-size: contain;
   background-repeat: no-repeat;
   justify-self: end;
   box-shadow: 0.3em 0.5em 2em gray;
   border-radius: 5%;
+}
+
+@media only screen and (max-width: 960px) {
+  .Portfolio-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    min-height: 80vh;
+    width: 90vw;
+  }
+  .Portfolio-logo {
+    position: relative;
+    justify-self: left;
+    left: 5vw;
+  }
+  #portfolio-modal {
+    position: fixed;
+    top: 10vh;
+  }
+  #portfolio-modal img {
+    height: 30vh;
+    width: auto;
+  }
+  .Desktop {
+    height: 20vh;
+  }
+  .Contact {
+    width: 80vw;
+  }
+  .fa-github {
+    /* font-size: 1.5em ; */
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Nav ol li a {
+    font-size: calc(1em + 0.5vw);
+  }
+ 
 }

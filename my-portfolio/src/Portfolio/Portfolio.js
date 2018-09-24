@@ -100,7 +100,7 @@ class Portfolio extends Component {
                     ? (
                         <Grid container spacing={0} id='portfolio-modal'>
                             <Grid container item xs={12} justify='center'>
-                                <Button 
+                                <Button
                                     id='link-button'
                                     variant="contained"
                                     href={portfolioDetail[2]} target='_blank' className='outside-link'>
