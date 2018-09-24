@@ -48,10 +48,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 document.addEventListener('DOMContentLoaded', function () {
+    // document.getElementsByClassName("navmenu").addEventListener('click', function (e) {
     document.querySelector('.Nav ol').addEventListener('click', function (e) {
+
+
         let aAll = this.querySelectorAll('a');
         let liAll = this.querySelectorAll('li');
-
+        // console.log(this)
+        // console.log(e.target)
+        // console.log(liAll);
         aAll.forEach((item) => {
             item.classList.remove('active');
 
@@ -59,11 +64,12 @@ document.addEventListener('DOMContentLoaded', function () {
         liAll.forEach((item) => {
             item.classList.remove('current')
         })
+        if (e.target.classList.contains('navmenu')) {
+            e.target.classList.add('active');
+            // console.log(e.target.classList);
+            e.target.parentNode.classList.add('current');
 
-        e.target.classList.add('active');
-        e.target.parentNode.classList.add('current');
-
-
+        }
 
 
     })
@@ -131,7 +137,7 @@ function saveMessage(name, email, subject, message) {
 /////GITHUB LINK/////
 document.querySelector('.fa-github').addEventListener('click', githubLink);
 function githubLink() {
-    window.open('https://github.com/ZhenChiX','_blank');
-    
+    window.open('https://github.com/ZhenChiX', '_blank');
+
     console.log('click');
 }
