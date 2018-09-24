@@ -28,7 +28,7 @@ const styles = theme => ({
         width: 300,
     },
     button: {
-        width: 200,
+        width: 150,
     }
 
 });

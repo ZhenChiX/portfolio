@@ -10,7 +10,7 @@ class Nav extends Component {
                     <li><span className="fas fa-user-cog"></span><a href="#chi-portfolio">PORTFOLIO</a></li>
                     <li><span className="fas fa-envelope"></span><a href="#chi-contacts">CONTACT</a></li>
                 </ol>
-                <span className="fab fa-github" title="Github"></span>
+                <span id="github" className="fab fa-github" title="Github"></span>
             </div>
         );
     }
