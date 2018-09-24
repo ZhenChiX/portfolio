@@ -19,7 +19,6 @@ body {
 .Main {
   position: relative;
   display: grid;
-  /* width:70vw; */
   margin: auto;
   grid-template-areas: "Main-header" "Main-intro";
 }
@@ -42,8 +41,8 @@ body {
   background-image: url("../chi-resume-logo.png");
   width: 25vw;
   height: 25vw;
-  min-width: 200px;
-  min-height: 200px;
+  min-width: 150px;
+  min-height: 150px;
   background-size: cover;
   margin: auto;
   z-index: 9;
@@ -76,7 +75,7 @@ body {
   width: 70vw;
   margin: auto;
   transform: translate(0vw, 10vh);
-  font-size: 1em;
+  /* font-size: 1em; */
 }
 
 .Main-skill>h1 {
@@ -249,10 +248,10 @@ body {
 /* /////FOR CONTACTS SECTION////// */
 
 .Contact {
+  display: grid;
   position: relative;
   font-family: baka;
-  display: grid;
-  width: 70vw;
+  width: 60vw;
   margin: auto;
   font-family: 'Montserrat', sans-serif;
   align-items: center;
@@ -285,8 +284,9 @@ body {
     left: 5vw;
   }
   #portfolio-modal {
-    position: fixed;
+    position: absolute;
     top: 10vh;
+    left: 10vw;
   }
   #portfolio-modal img {
     height: 30vh;
@@ -296,16 +296,38 @@ body {
     height: 20vh;
   }
   .Contact {
-    width: 80vw;
-  }
-  .fa-github {
-    /* font-size: 1.5em ; */
+    width: 70vw;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .Nav ol li a {
-    font-size: calc(1em + 0.5vw);
+    font-size: 1em !important;
   }
- 
+  .Main-intro {
+    font-size: calc(0.9em + 0.5vw);
+  }
+  .Main-skill {
+    width: 80vw;
+  }
+  .Main-skill h1 {
+    font-size: 1.5em;
+  }
+  .Main-skill ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .Main-skill ul li {
+    font-size: 1.5em;
+  }
+  .Nav ol li span {
+    font-size: 1em;
+  }
+  #github {
+    font-size: 1.5em !important;
+    left: 90vw;
+    top: 2vh;
+  }
+  .Contact {
+    width: 75vw;
+  }
 }
